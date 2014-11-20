@@ -30,6 +30,11 @@ class GradientView: UIView {
         super.awakeFromNib()
         updateView()
     }
+	
+	override func prepareForInterfaceBuilder() {
+		super.prepareForInterfaceBuilder()
+		updateView()
+	}
     
     func updateView() {
         let gradientLayer = layer as CAGradientLayer
