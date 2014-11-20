@@ -9,17 +9,17 @@
 import UIKit
 class GradientView: UIView {
     
-    var startColor:UIColor = UIColor.lightGrayColor() {
+    @IBInspectable var startColor:UIColor = UIColor.lightGrayColor() {
         didSet {
             updateView()
         }
     }
-    var endColor:UIColor = UIColor.whiteColor() {
+    @IBInspectable var endColor:UIColor = UIColor.whiteColor() {
         didSet {
             updateView()
         }
     }
-    var horizontal:Bool = true {
+    @IBInspectable var horizontal:Bool = true {
         didSet{
             updateView()
         }
